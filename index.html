@@ -3,66 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CS Professional Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>The Artisan Crust | Pastry & Flatbreads</title>
+    <!-- Bakery-style fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,700;1,400&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div class="container header-content">
-            <h1 class="logo">Mark Julian T. Bautista <span>| Cloud Concepts</span></h1>
+            <h1 class="logo">The Artisan Crust <span>Bakery</span></h1>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="#about">Profile</a></li>
-                    <li><a href="#cloud">Cloud Fundamentals</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#features">Live Metrics</a></li>
+                    <li><a href="#about">Our Story</a></li>
+                    <li><a href="#menu">Our Menu</a></li>
+                    <li><a href="#promos">Special Promos</a></li>
                 </ul>
             </nav>
-            <button id="themeToggle" class="btn-primary">Enable Dark Mode</button>
+            <button id="themeToggle" class="btn-primary">Night Mode</button>
         </div>
     </header>
 
     <main class="container">
+        <!-- Section 1: About -->
         <section id="about" class="glass-card">
             <div class="section-header">
-                <h2>Professional Profile</h2>
+                <h2>Freshly Baked Every Day</h2>
             </div>
-            <p><strong>Name:</strong> Mark Julian T. Bautista</p>
-            <p><strong>Program:</strong> BSCS CS1G</p>
-            <p><strong>Objective:</strong> A dedicated Computer Science student aiming to master cloud technologies, infrastructure deployment, and modern web development.</p>
+            <div class="split-content">
+                <div class="text-content">
+                    <p>Welcome to <strong>The Artisan Crust</strong>! We are a small local bakery specializing in handcrafted flatbreads, warm pastries, and sourdough creations.</p>
+                    <p>Every piece is baked with love, using only the finest organic ingredients sourced from local farmers to bring you the best morning experience.</p>
+                </div>
+                <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400&q=80" alt="Fresh Bread" class="feature-img">
+            </div>
         </section>
 
-        <section id="cloud" class="glass-card">
+        <!-- Section 2: Menu (List Requirement) -->
+        <section id="menu" class="glass-card">
             <div class="section-header">
-                <h2>What is Cloud Computing?</h2>
+                <h2>Our Best Sellers</h2>
             </div>
-            <p>Cloud computing transforms traditional IT by delivering on-demand computing services—from applications to storage and processing power—typically over the internet and on a pay-as-you-go basis. It enables rapid innovation, flexible resources, and economies of scale.</p>
-        </section>
-
-        <section id="services" class="glass-card">
-            <div class="section-header">
-                <h2>Core Cloud Services</h2>
-            </div>
-            <ul class="service-list">
-                <li><strong>Google Workspace:</strong> Enterprise collaboration and secure cloud storage.</li>
-                <li><strong>GitHub:</strong> Version control, CI/CD pipelines, and source code management.</li>
-                <li><strong>Microsoft Azure:</strong> Comprehensive cloud platform for building, deploying, and managing complex applications globally.</li>
+            <ul class="menu-list">
+                <li><strong>Garlic & Herb Flatbread</strong> - Olive oil, roasted garlic, and rosemary.</li>
+                <li><strong>Classic Butter Croissant</strong> - Flaky, golden, and melts in your mouth.</li>
+                <li><strong>Rustic Sourdough Loaf</strong> - Fermented for 24 hours for the perfect crust.</li>
+                <li><strong>Cinnamon Pecan Roll</strong> - Sweet, sticky, and topped with cream cheese.</li>
             </ul>
-            <a href="https://aws.amazon.com/what-is-cloud-computing/" target="_blank" class="text-link">Read external documentation on AWS Cloud &rarr;</a>
+            <a href="https://www.foodnetwork.com/recipes/articles/bread-recipes-for-beginners" target="_blank" class="text-link">Discover flatbread recipes here &rarr;</a>
         </section>
 
-        <section id="features" class="glass-card">
+        <!-- Section 3: Interactive Features -->
+        <section id="promos" class="glass-card">
             <div class="section-header">
-                <h2>System Dashboard (JavaScript Features)</h2>
+                <h2>Store Dashboard & Promos</h2>
             </div>
+            <p>Catch our exclusive weekend bake sale! Check our live store time and the countdown below.</p>
             <div class="dashboard-grid">
                 <div class="metric-box">
-                    <h3>System Time</h3>
+                    <h3>Current Local Time</h3>
                     <p id="liveClock" class="metric-value">Syncing...</p>
                 </div>
                 <div class="metric-box">
-                    <h3>Deployment Countdown (2027)</h3>
+                    <h3>Weekend Bake Sale Starts In</h3>
                     <p id="countdownTimer" class="metric-value">Calculating...</p>
                 </div>
             </div>
@@ -71,7 +73,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2026 Mark Julian T. Bautista. Deployed via GitHub Pages.</p>
+            <p>&copy; 2026 The Artisan Crust. Created for GitHub Pages Activity.</p>
         </div>
     </footer>
 
