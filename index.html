@@ -4,54 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Cloud Computing Page</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Cloud Computing Fundamentals</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#cloud">What is Cloud?</a></li>
-                <li><a href="#services">Cloud Services</a></li>
-                <li><a href="#features">Interactive Features</a></li>
-            </ul>
-        </nav>
-        <button id="themeToggle">Toggle Dark Mode</button>
+        <div class="header-container">
+            <h1>Cloud Computing Fundamentals</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#cloud">What is Cloud?</a></li>
+                    <li><a href="#services">Cloud Services</a></li>
+                    <li><a href="#features">Interactive Features</a></li>
+                </ul>
+            </nav>
+            <button id="themeToggle">Toggle Dark Mode</button>
+        </div>
     </header>
 
     <main>
         <section id="about" class="card">
             <h2>About Me</h2>
-            <p><strong>Name:</strong> Mark Julian T. Bautista</p>
-            <p><strong>Course/Program:</strong> BSCS CS1G</p>
-            <p><strong>Description:</strong> I am a CS student interested in learning how cloud technologies operate.</p>
+            <div class="card-content">
+                <p><strong>Name:</strong> Mark Julian T. Bautista</p>
+                <p><strong>Course/Program:</strong> BSCS CS1G</p>
+                <p><strong>Description:</strong> I am a CS student interested in learning how cloud technologies operate.</p>
+            </div>
         </section>
 
         <section id="cloud" class="card">
             <h2>What is Cloud Computing?</h2>
-            <p>Cloud computing is the delivery of different computing services like servers, storage, databases, and software over the internet, allowing for flexible and on-demand access.</p>
+            <div class="card-content">
+                <p>Cloud computing is the delivery of different computing services like servers, storage, databases, and software over the internet, allowing for flexible and on-demand access.</p>
+            </div>
         </section>
 
         <section id="services" class="card">
             <h2>Cloud Services</h2>
-            <ul>
-                <li><strong>Google Workspace:</strong> Used for cloud storage (Drive) and online document collaboration.</li>
-                <li><strong>GitHub:</strong> Used for source code management, version control, and online collaboration.</li>
-                <li><strong>Microsoft Azure:</strong> Used for building, deploying, and managing applications through global data centers.</li>
-            </ul>
-            <p><strong>Helpful Link:</strong> <a href="https://aws.amazon.com/what-is-cloud-computing/" target="_blank">Learn more about Cloud Computing here</a></p>
+            <div class="card-content">
+                <ul>
+                    <li><strong>Google Workspace:</strong> Used for cloud storage (Drive) and online document collaboration.</li>
+                    <li><strong>GitHub:</strong> Used for source code management, version control, and online collaboration.</li>
+                    <li><strong>Microsoft Azure:</strong> Used for building, deploying, and managing applications through global data centers.</li>
+                </ul>
+                <p class="link-container"><strong>Helpful Link:</strong> <a href="https://aws.amazon.com/what-is-cloud-computing/" target="_blank">Learn more about Cloud Computing here</a></p>
+            </div>
         </section>
 
         <section id="features" class="card">
             <h2>Interactive JavaScript Features</h2>
-            <div class="js-box">
-                <h3>Live Time Clock</h3>
-                <p id="liveClock">Loading time...</p>
-            </div>
-            <div class="js-box">
-                <h3>Countdown to Next Year</h3>
-                <p id="countdownTimer">Calculating time...</p>
+            <div class="js-features-grid">
+                <div class="js-box">
+                    <h3>Live Time Clock</h3>
+                    <p id="liveClock">Loading time...</p>
+                </div>
+                <div class="js-box">
+                    <h3>Countdown to Next Year</h3>
+                    <p id="countdownTimer">Calculating time...</p>
+                </div>
             </div>
         </section>
     </main>
