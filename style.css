@@ -1,3 +1,7 @@
+html {
+    scroll-padding-top: 90px;
+    scroll-behavior: smooth;
+}
 :root {
     --bg-color: #f4f7f9;
     --text-main: #2b3a42;
