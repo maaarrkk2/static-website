@@ -1,3 +1,4 @@
+//Live Time
 function updateClock() {
     const clockElement = document.getElementById('liveClock');
     const now = new Date();
@@ -6,15 +7,16 @@ function updateClock() {
 setInterval(updateClock, 1000);
 updateClock();
 
-// Countdown
+// Bake Sale Countdown (Countdown Timer)
 function updateCountdown() {
     const countdownElement = document.getElementById('countdownTimer');
-    const targetDate = new Date('January 1, 2027 00:00:00').getTime();
+    // Set to a future weekend date
+    const targetDate = new Date('December 31, 2026 08:00:00').getTime();
     const now = new Date().getTime();
     const distance = targetDate - now;
 
     if (distance < 0) {
-        countdownElement.innerText = "Deployment Active";
+        countdownElement.innerText = "Sale is Live!";
         return;
     }
 
@@ -28,14 +30,14 @@ function updateCountdown() {
 setInterval(updateCountdown, 1000);
 updateCountdown();
 
-// Theme Toggle
+// Night Mode Toggle
 const themeToggleBtn = document.getElementById('themeToggle');
 themeToggleBtn.addEventListener('click', function() {
     document.body.classList.toggle('dark-mode');
     
     if (document.body.classList.contains('dark-mode')) {
-        themeToggleBtn.innerText = "Enable Light Mode";
+        themeToggleBtn.innerText = "Day Mode";
     } else {
-        themeToggleBtn.innerText = "Enable Dark Mode";
+        themeToggleBtn.innerText = "Night Mode";
     }
 });
