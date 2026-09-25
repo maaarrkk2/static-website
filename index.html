@@ -3,73 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Cloud Computing Page</title>
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>CS Professional Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <div class="header-container">
-            <h1>Cloud Computing Fundamentals</h1>
+        <div class="container header-content">
+            <h1 class="logo">Mark Julian T. Bautista <span>| Cloud Concepts</span></h1>
             <nav>
-                <ul>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#cloud">What is Cloud?</a></li>
-                    <li><a href="#services">Cloud Services</a></li>
-                    <li><a href="#features">Interactive Features</a></li>
+                <ul class="nav-links">
+                    <li><a href="#about">Profile</a></li>
+                    <li><a href="#cloud">Cloud Fundamentals</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#features">Live Metrics</a></li>
                 </ul>
             </nav>
-            <button id="themeToggle">Toggle Dark Mode</button>
+            <button id="themeToggle" class="btn-primary">Enable Dark Mode</button>
         </div>
     </header>
 
-    <main>
-        <section id="about" class="card">
-            <h2>About Me</h2>
-            <div class="card-content">
-                <p><strong>Name:</strong> Mark Julian T. Bautista</p>
-                <p><strong>Course/Program:</strong> BSCS CS1G</p>
-                <p><strong>Description:</strong> I am a CS student interested in learning how cloud technologies operate.</p>
+    <main class="container">
+        <section id="about" class="glass-card">
+            <div class="section-header">
+                <h2>Professional Profile</h2>
             </div>
+            <p><strong>Name:</strong> Mark Julian T. Bautista</p>
+            <p><strong>Program:</strong> BSCS CS1G</p>
+            <p><strong>Objective:</strong> A dedicated Computer Science student aiming to master cloud technologies, infrastructure deployment, and modern web development.</p>
         </section>
 
-        <section id="cloud" class="card">
-            <h2>What is Cloud Computing?</h2>
-            <div class="card-content">
-                <p>Cloud computing is the delivery of different computing services like servers, storage, databases, and software over the internet, allowing for flexible and on-demand access.</p>
+        <section id="cloud" class="glass-card">
+            <div class="section-header">
+                <h2>What is Cloud Computing?</h2>
             </div>
+            <p>Cloud computing transforms traditional IT by delivering on-demand computing services—from applications to storage and processing power—typically over the internet and on a pay-as-you-go basis. It enables rapid innovation, flexible resources, and economies of scale.</p>
         </section>
 
-        <section id="services" class="card">
-            <h2>Cloud Services</h2>
-            <div class="card-content">
-                <ul>
-                    <li><strong>Google Workspace:</strong> Used for cloud storage (Drive) and online document collaboration.</li>
-                    <li><strong>GitHub:</strong> Used for source code management, version control, and online collaboration.</li>
-                    <li><strong>Microsoft Azure:</strong> Used for building, deploying, and managing applications through global data centers.</li>
-                </ul>
-                <p class="link-container"><strong>Helpful Link:</strong> <a href="https://aws.amazon.com/what-is-cloud-computing/" target="_blank">Learn more about Cloud Computing here</a></p>
+        <section id="services" class="glass-card">
+            <div class="section-header">
+                <h2>Core Cloud Services</h2>
             </div>
+            <ul class="service-list">
+                <li><strong>Google Workspace:</strong> Enterprise collaboration and secure cloud storage.</li>
+                <li><strong>GitHub:</strong> Version control, CI/CD pipelines, and source code management.</li>
+                <li><strong>Microsoft Azure:</strong> Comprehensive cloud platform for building, deploying, and managing complex applications globally.</li>
+            </ul>
+            <a href="https://aws.amazon.com/what-is-cloud-computing/" target="_blank" class="text-link">Read external documentation on AWS Cloud &rarr;</a>
         </section>
 
-        <section id="features" class="card">
-            <h2>Interactive JavaScript Features</h2>
-            <div class="js-features-grid">
-                <div class="js-box">
-                    <h3>Live Time Clock</h3>
-                    <p id="liveClock">Loading time...</p>
+        <section id="features" class="glass-card">
+            <div class="section-header">
+                <h2>System Dashboard (JavaScript Features)</h2>
+            </div>
+            <div class="dashboard-grid">
+                <div class="metric-box">
+                    <h3>System Time</h3>
+                    <p id="liveClock" class="metric-value">Syncing...</p>
                 </div>
-                <div class="js-box">
-                    <h3>Countdown to Next Year</h3>
-                    <p id="countdownTimer">Calculating time...</p>
+                <div class="metric-box">
+                    <h3>Deployment Countdown (2027)</h3>
+                    <p id="countdownTimer" class="metric-value">Calculating...</p>
                 </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2026 Mark Julian T. Bautista. Published using GitHub Pages.</p>
+        <div class="container">
+            <p>&copy; 2026 Mark Julian T. Bautista. Deployed via GitHub Pages.</p>
+        </div>
     </footer>
 
     <script src="script.js"></script>
