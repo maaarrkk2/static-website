@@ -16,7 +16,7 @@
                 <ul class="nav-links">
                     <li><a href="#about">Our Story</a></li>
                     <li><a href="#menu">Our Menu</a></li>
-                    <li><a href="#promos">Special Promos</a></li>
+                    <li><a href="#cart">My Cart</a></li>
                 </ul>
             </nav>
             <button id="themeToggle" class="btn-primary">Night Mode</button>
@@ -38,27 +38,54 @@
             </div>
         </section>
 
-        <!-- Menu (List Requirement) -->
+        <!-- Menu -->
         <section id="menu" class="glass-card">
             <div class="section-header">
                 <h2>Our Best Sellers</h2>
             </div>
             <ul class="menu-list">
-                <li><strong>Garlic & Herb Flatbread</strong> - Olive oil, roasted garlic, and rosemary.</li>
-                <li><strong>Classic Butter Croissant</strong> - Flaky, golden, and melts in your mouth.</li>
-                <li><strong>Rustic Sourdough Loaf</strong> - Fermented for 24 hours for the perfect crust.</li>
-                <li><strong>Cinnamon Pecan Roll</strong> - Sweet, sticky, and topped with cream cheese.</li>
+                <li>
+                    <div>
+                        <strong>Garlic & Herb Flatbread</strong> - Olive oil, roasted garlic, and rosemary.
+                    </div>
+                    <button class="add-to-cart-btn" data-item="Garlic & Herb Flatbread" data-price="120">Add to Cart ₱120</button>
+                </li>
+                <li>
+                    <div>
+                        <strong>Classic Butter Croissant</strong> - Flaky, golden, and melts in your mouth.
+                    </div>
+                    <button class="add-to-cart-btn" data-item="Classic Butter Croissant" data-price="95">Add to Cart ₱95</button>
+                </li>
+                <li>
+                    <div>
+                        <strong>Rustic Sourdough Loaf</strong> - Fermented for 24 hours for the perfect crust.
+                    </div>
+                    <button class="add-to-cart-btn" data-item="Rustic Sourdough Loaf" data-price="180">Add to Cart ₱180</button>
+                </li>
+                <li>
+                    <div>
+                        <strong>Cinnamon Pecan Roll</strong> - Sweet, sticky, and topped with cream cheese.
+                    </div>
+                    <button class="add-to-cart-btn" data-item="Cinnamon Pecan Roll" data-price="110">Add to Cart ₱110</button>
+                </li>
             </ul>
             <a href="https://www.foodnetwork.com/recipes/articles/bread-recipes-for-beginners" target="_blank" class="text-link">Discover flatbread recipes here &rarr;</a>
         </section>
 
-        <!-- Features -->
-        <section id="promos" class="glass-card">
+        <!-- Cart & Clock -->
+        <section id="cart" class="glass-card">
             <div class="section-header">
-                <h2>Store Dashboard & Promos</h2>
+                <h2>Your Shopping Cart</h2>
             </div>
-            <p>Catch our exclusive weekend bake sale! Check our live store time and the countdown below.</p>
-            <div class="dashboard-grid">
+            <div id="cartItems" class="cart-container">
+                <p>Your cart is empty.</p>
+            </div>
+            <div class="cart-total">
+                <h3>Total: ₱<span id="cartTotal">0</span></h3>
+                <button id="clearCartBtn" class="btn-primary" style="background-color: #795548;">Clear Cart</button>
+            </div>
+            
+            <div class="dashboard-grid" style="margin-top: 30px;">
                 <div class="metric-box">
                     <h3>Current Local Time</h3>
                     <p id="liveClock" class="metric-value">Syncing...</p>
@@ -73,7 +100,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2026 The Artisan Crust.</p>
+            <p>&copy; 2026 The Artisan Crust. Created for GitHub Pages Activity.</p>
         </div>
     </footer>
 
